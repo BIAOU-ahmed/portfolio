@@ -186,21 +186,18 @@
 		<div class="main-container">
 			<h3 style="text-align: center;">Get In Touch </h3>
 
-			<form id="contact-form" action="">
+			<form name="contact" id="contact-form" action="" method="POST">
 				<label for="">Name</label>
-				<input type="text" class="input-field" name="name">
+				<input type="text" class="input-field" id="name" name="name" required>
 
 				<label for="">Subject</label>
-				<input type="text" class="input-field" name="subject">
+				<input type="text" class="input-field" id="subject" name="subject" required>
 
 				<label for="">Email</label>
-				<input type="text" class="input-field" name="email">
+				<input type="email" class="input-field" id="email" name="email" required>
 
 				<label for="">Message</label>
-				<textarea name="message" class="input-field"></textarea>
-
-
-
+				<textarea id=" message" name="message" class="input-field" required></textarea>
 
 
 				<input type="submit" id="submit-btn" value="Send">
@@ -209,6 +206,8 @@
 		</div>
 	</section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="script.js" ></script>
+
 </body>
 </html>
